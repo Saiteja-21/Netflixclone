@@ -26,9 +26,8 @@ const Navbar = () => {
   return (
    
     <div className={show?'nav__black':'nav'}>
-  
-      <img className="nav__logo" src='./netflix-logo.jpg' alt='not found'></img>
-      <img className="nav__avatar"  src='./Netflix-avatar.png' alt='notfound'></img>
+      <img className="nav__logo" src={process.env.PUBLIC_URL + '/netflix-logo.png'}  alt="no"/> 
+      <img className="nav__avatar" src={process.env.PUBLIC_URL + '/Netflix-avatar.png'}  alt="no"/> 
      
 
     </div>
