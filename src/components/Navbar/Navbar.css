@@ -9,7 +9,6 @@
   z-index: 1;
   transition-timing-function: ease-in;
   transition: all 0.5s;
-  list-style-type: none;
  
 }
 .nav__logo {

@@ -27,8 +27,8 @@ const Navbar = () => {
    
     <div className={show?'nav__black':'nav'}>
   
-      <li ><img className="nav__logo" src='./netflix-logo.jpg' alt='not found'></img></li>
-      <li ><img className="nav__avatar"  src='./Netflix-avatar.png' alt='notfound'></img></li>
+      <img className="nav__logo" src='./netflix-logo.jpg' alt='not found'></img>
+      <img className="nav__avatar"  src='./Netflix-avatar.png' alt='notfound'></img>
      
 
     </div>
