@@ -4,6 +4,7 @@ import "./Banner.css";
  import requests from "../../request";
 
 const Banner = () => {
+  console.log('hjnk');
   const [movie, setMovie] = useState([]);
   
   
@@ -13,7 +14,7 @@ const Banner = () => {
     .then(res=>{
       //console.log(res)
        setMovie(res.data.results[Math.floor(Math.random()*19)])
-       console.log(res.data.results[0]);
+       //console.log(res.data.results[0]);
     
     })
    
@@ -23,7 +24,7 @@ const Banner = () => {
 
   return (
     <div >
-      <header className="banner" style={{backgroundImage:`URL(https://image.tmdb.org/t/p/original/${movie?.backdrop_path})`}}>
+      <header className="banner" style={{backgroundImage:`URL(https://image.tmdb.org/t/p/original/${movie.backdrop_path})`}}>
       <div className="banner__contents">
         <h1 className="banner__title">
           {movie.name}

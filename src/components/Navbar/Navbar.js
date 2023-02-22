@@ -8,7 +8,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const changenavbarcolor = ()  =>{
    console.log(window.scrollY);
-    if(window.scrollY>80){
+    if(window.scrollY>50){
       setShow(true);
       
     }
@@ -18,11 +18,12 @@ const Navbar = () => {
    }
 
    useEffect(() => {
+    
   
     window.addEventListener('scroll',changenavbarcolor)
 
      },[show]);
-  console.log(window.scrollY);
+ // console.log(window.scrollY);
   return (
    
     <div className={show?'nav__black':'nav'}>
